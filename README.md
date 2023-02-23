@@ -10,6 +10,7 @@ Project of Laravel
 
 - Laravel
 - Blade
+- Mix Laravel
 
 ## :memo: License
 
