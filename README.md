@@ -1,4 +1,4 @@
-<h1 align="center"> Listar Séries </h1>
+<h1 align="center"> Controle de Séries </h1>
 
 <p align="center">
 Project of Laravel

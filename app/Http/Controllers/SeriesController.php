@@ -14,7 +14,7 @@ class SeriesController extends Controller
             'House Of Dragon'
         ];
 
-        return view('listar-series', [
+        return view('series.index', [
             'series' => $series
         ]);
     }
