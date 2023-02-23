@@ -18,4 +18,9 @@ class SeriesController extends Controller
             'series' => $series
         ]);
     }
+
+    public function create()
+    {
+        return view('series.create');
+    }
 }
