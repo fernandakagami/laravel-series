@@ -14,12 +14,8 @@ class SeriesController extends Controller
             'House Of Dragon'
         ];
 
-        $html = '<ul>';
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-        $html .= '</ul>';
-
-        echo $html;
+        return view('listar-series', [
+            'series' => $series
+        ]);
     }
 }
