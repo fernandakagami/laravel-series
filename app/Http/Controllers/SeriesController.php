@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SeriesFormRequest;
 use App\Models\Serie;
-use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $series = Serie::query()->orderBy('nome')->get();
         $mensagemSucesso = session('mensagem.sucesso');        
