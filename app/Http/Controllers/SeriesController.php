@@ -9,7 +9,7 @@ class SeriesController extends Controller
 {
     public function index()
     {
-        $series = Serie::query()->orderBy('nome')->get();
+        $series = Serie::with(['temporadas'])->get();
         $mensagemSucesso = session('mensagem.sucesso');        
 
         return view('series.index')->with('series', $series)->with('mensagemSucesso', $mensagemSucesso);
